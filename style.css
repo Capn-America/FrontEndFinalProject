@@ -2,3 +2,149 @@
 font-family: 'Coiny', cursive;  Name
 font-family: 'Mukta Malar', sans-serif; Footer info
 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding: 20px;
+    background: radial-gradient(lightblue, cyan, blue);
+    display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+div{
+ /* border: dashed black 2px; */
+}
+
+
+.pad
+{
+    color: transparent;
+}
+#headerContent
+{
+    display: flex;
+    justify-content: center;
+}
+
+
+#header
+{
+   
+    background-image: url("file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/microsoft.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment:center;
+   
+    border: 10px outset #5cb5f0;
+    display: flex;
+   justify-content: flex-start;
+   width: 900px;
+   height: 160px;
+   padding-left: 30px;
+   
+  
+
+}
+
+#name
+{
+
+}
+
+
+#bigName
+{   display: flex;
+    align-items: center;
+    font-family: 'Coiny', cursive;
+    font-size: 50px;
+    font-weight: bolder;
+
+}
+#jobTitle
+{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#pageContent
+{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+.pageblock
+{
+    background-color: cadetblue;
+    color: white;
+    border: 10px outset #5cb5f0;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 30px;
+    text-align: center;
+}
+#photo
+{
+    width: 350px;
+}
+
+#theShining
+{
+    width: 500px;
+}
+
+.wraper {
+    flex:1;
+  }
+
+#footerContent
+{
+    display: flex;
+    justify-content: center;
+
+}
+#footer
+{
+    border: 10px outset #5cb5f0;
+    font-size: 25px;
+    font-family: 'Mukta Malar', sans-serif; 
+    font-weight: bolder;
+
+
+    display: flex;
+    justify-content: flex-start;
+    width: 900px;
+    height: 170px;
+    padding-left: 30px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+}
+
+.footerIcon
+{
+    width: 50px;
+}
+#footerLeft
+{
+
+
+}
+#footerRight
+{
+margin-left: 100px;
+}
+
+.first-item {
+    order: 1;
+  }
+  
+  .last-item {
+    order: -1;
+  }
