@@ -1,4 +1,4 @@
-function loadRepo(url, callback) 
+/*function loadRepo(url, callback) 
 {
     const gitHubRequest = new XMLHttpRequest();
     gitHubRequest.onreadystatechange = function() {
@@ -26,7 +26,23 @@ function loadRepo(url, callback)
 
 var getJSON=document.getElementById
 
+*/
 
+$("button").click(function()  {
+ // $("eraseLabel").remove();
+
+$.getJSON( "https://api.github.com/users/Capn-America/repos", function(obj) {
+
+    $.each(obj, function(key, value) {
+         // $("ul").append("<li>"+value.name+value.html_url+"</li>");
+          $("ul").append("<li> <a href="+value.html_url+">"+value.name+"</a> </li>");
+    });
+
+});
+
+//<a href="value.html_url">+value.name+</a>
+
+});
 
 
 
