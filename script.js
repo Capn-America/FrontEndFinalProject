@@ -1,9 +1,17 @@
 function loadRepo(url, callback) 
 {
     const gitHubRequest = new XMLHttpRequest();
+    gitHubRequest.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+          document.getElementById("gitHubReps").innerHTML = this.responseText;
+        }
+      };
+      gitHubRequest.open("GET", "/Users/stephenrogers/Desktop/Woz U/Front End Foundations/FrontEndFinal/FrontEndFinalProject/API.json", true);
+      gitHubRequest.send();
+    }
       // Finish your request here
       // Don't forget the callback()
-  }
+  
   
   function loadRepoCallback(gitHubRequest) 
   {
@@ -16,39 +24,33 @@ function loadRepo(url, callback)
   }
 
 
-  function loadDoc() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        document.getElementById("gitHubReps").innerHTML = this.responseText;
-      }
-    };
-    xhttp.open("GET", "file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/API.txt", true);
-    xhttp.send();
-  }
+var getJSON=document.getElementById
 
 
 
 
 
 
+
+
+
+
+
+//Change color scheme of page.
   function turnGrey()
-  {
-    
-    
-    var checkBox = document.getElementById("myCheck");
-    // Get the output text
-   
-  
-    // If the checkbox is checked, display the output text
-    if (checkBox.checked == true){
-        document.getElementById("original").href="style2.css";
-    } else {
+    {
+        var checkBox = document.getElementById("myCheck");
+     if (checkBox.checked == true){
+         document.getElementById("original").href="style2.css";
+    } 
+    else {
         document.getElementById("original").href="style.css";
     }
-  }
+    }
 
 
+
+//hover over element- Image-Shining
 document.getElementById("theShining").onmouseover = function() {mouseOver()};
 document.getElementById("theShining").onmouseout = function() {mouseOut()};
 
