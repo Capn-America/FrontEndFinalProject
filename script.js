@@ -29,18 +29,20 @@ var getJSON=document.getElementById
 */
 
 $("button").click(function()  {
- // $("eraseLabel").remove();
+  $("eraseLabel").append("groovy");
 
 $.getJSON( "https://api.github.com/users/Capn-America/repos", function(obj) {
 
     $.each(obj, function(key, value) {
          // $("ul").append("<li>"+value.name+value.html_url+"</li>");
-          $("ul").append("<li> <a href="+value.html_url+">"+value.name+"</a> </li>");
+         
+         
+         $("ul").append("<li> <a href="+value.html_url+">"+value.name+"</a> </li>");
     });
-
+    document.getElementById("eraseLabel").innerHTML="";
 });
 
-//<a href="value.html_url">+value.name+</a>
+
 
 });
 
