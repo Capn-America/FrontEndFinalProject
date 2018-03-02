@@ -10,7 +10,7 @@ font-family: 'Mukta Malar', sans-serif; Footer info
 
 body{
     padding: 20px;
-    background: radial-gradient(lightblue, cyan, blue);
+    background: radial-gradient(white, lightgray, gray);
     display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -48,7 +48,7 @@ button{
     background-position: center;
     background-attachment:center;
    
-    border: 10px outset #5cb5f0;
+    border: 10px outset gray;
     display: flex;
    justify-content: flex-start;
    width: 900px;
@@ -91,9 +91,9 @@ button{
 
 .pageblock
 {
-    background-color: cadetblue;
+    background-color: gray;
     color: white;
-    border: 10px outset #5cb5f0;
+    border: 10px outset darkgray;
     border-radius: 10px;
     padding: 15px;
     margin: 30px;
@@ -128,7 +128,7 @@ button{
 }
 #footer
 {
-    border: 10px outset #5cb5f0;
+    border: 10px outset darkgray;
     font-size: 25px;
     font-family: 'Mukta Malar', sans-serif; 
     font-weight: bolder;

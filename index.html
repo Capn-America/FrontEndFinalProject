@@ -3,7 +3,7 @@
     <head>
         <title>Front End Foundations</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <link id="original" rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Coiny|Mukta+Malar" rel="stylesheet">
     </head>
     <body>
@@ -16,6 +16,7 @@
                 
             </div>
         </div>
+        
             <div id="pageContent">
                    <div class="pageblock first-item">
                        <h1>Personal Info:</h1>
@@ -23,30 +24,58 @@
                     </div>
                     <div class="pageblock">
                             
-                            <div class="pad">Pad</div>
+                            
                         <h1>Links to My Websites:</h1>
                         <div class="pad">Pad</div>
-                        <ul>
-                            <li><a href="www.linkedin.com/in/stephenrogers74">
+                        
+                            <a href="https://www.linkedin.com/in/stephenrogers74"> 
                                 <img class="footerIcon" src="file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/LinkedIn.png"> 
-                                LinkedIn Profile</a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/stephen.rogers.315">
+                                </a>
+                            
+                            
+                                <a href="https://www.facebook.com/stephen.rogers.315"> 
                                 <img class="footerIcon"  src="file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/facebook.png">
-                                Facebook Profile</a>
-                            </li>
-                            <li>
+                                </a>
+                            
+                            
                                 <a href="https://github.com/Capn-America">
                                 <img class="footerIcon"  src="file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/Github.png">
-                                  Github</a>
-                            </li>
+                                </a>
+                                <h1>Github Repositories</h1>
+                                <div id="gitHubReps">Press button below to load Github Repositories
+                                
+                                    
+
+
+
+
+
+                                </div>
+
+                                <button type="button" onclick="loadDoc()">Github Repositories</button>
+
+                                <div class="pad">Pad</div>
+                                
+                                Check box below to change site color scheme: <br>
+                                
+
+                                   <label class="switch">
+                                    <input type="checkbox" id="myCheck" onclick="turnGrey()">
+                                    <span class="slider round"></span>
+                                    </label>   
+                                      
+                                
+
+
+
+
+
+
+
+
                             
-                            <ul>
-                                    <li>  lakdjjf</li>
-                                    <li>  kskfjnnf</li>
-                            </ul>
-                        </ul>
+                            
+                        
                         <div class="pad"></div>
                         
                         <div class="pad">Pad</div>
@@ -65,20 +94,20 @@
         <div id="footerContent">
             <div id="footer">
                 <div id="footerLeft">
-                    <h2>Contact Stephen Rogers:</h2>
-                    <p>1234 Lollypop Lane. </p>
-                      <p> Miami, Florida 87645</p>
+                    <h2>Contact: Stephen Rogers:</h2>
+                    <p class="indention">1234 Lollypop Lane. </p>
+                      <p class="indention"> Miami, Florida 87645</p>
                 </div>
                 <div id="footerRight">
                        
                     <div ="footerPhone">
-                        <a href="">
+                        <a href="903-353-8673">
                         <img class="footerIcon" 
                         src="file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/phone.png">
                     
                         <span>1-800-687-9876</span></a>
                     </div>
-                    <p> <a href="">
+                    <p> <a href="stephenrogers74@yahoo.com">
                         <img class="footerIcon"
                         src="file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/mail.png">
                         Wassup@wassup.mail</p></a>
@@ -93,7 +122,7 @@
 
 
 
-        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="script.js"></script>
     </body>
 </html>
