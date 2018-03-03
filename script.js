@@ -28,9 +28,11 @@ var getJSON=document.getElementById
 
 */
 
-$("button").click(function()  {
-  $("eraseLabel").append("groovy");
 
+// getJSON github
+$("button").click(function()  {
+    $("ul").html("");
+    $("#eraseLabel").replaceWith("");
 $.getJSON( "https://api.github.com/users/Capn-America/repos", function(obj) {
 
     $.each(obj, function(key, value) {
@@ -39,7 +41,8 @@ $.getJSON( "https://api.github.com/users/Capn-America/repos", function(obj) {
          
          $("ul").append("<li> <a href="+value.html_url+">"+value.name+"</a> </li>");
     });
-    document.getElementById("eraseLabel").innerHTML="";
+ //   document.getElementById("eraseLabel").innerHTML="";
+    
 });
 
 
@@ -48,6 +51,12 @@ $.getJSON( "https://api.github.com/users/Capn-America/repos", function(obj) {
 
 
 
+
+    $("#theShining") .mouseover(function () {
+        this.src= "file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/shining2.png";
+     }).mouseout(function () {
+         this.src= "file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/shining.png";
+     });
 
 
 
@@ -68,7 +77,8 @@ $.getJSON( "https://api.github.com/users/Capn-America/repos", function(obj) {
 
 
 
-//hover over element- Image-Shining
+//hover over element- Image-Shining DOC
+/*
 document.getElementById("theShining").onmouseover = function() {mouseOver()};
 document.getElementById("theShining").onmouseout = function() {mouseOut()};
 
@@ -79,5 +89,5 @@ function mouseOver() {
 function mouseOut() {
     document.getElementById("theShining").src = "file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/shining.png";
 }
-
+*/
 

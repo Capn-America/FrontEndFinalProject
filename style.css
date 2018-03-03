@@ -2,12 +2,15 @@
 font-family: 'Coiny', cursive;  Name
 font-family: 'Mukta Malar', sans-serif; Footer info
 */
+
+
+/* CSS reset and element tags*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Body section of page.  Cool background flex wrap-column */
 body{
     padding: 20px;
     background: radial-gradient(lightblue, cyan, blue);
@@ -15,10 +18,12 @@ body{
   flex-direction: column;
   min-height: 100vh;
 }
+/* putting borders on divs for testing purposes */
 div{
- /* border: dashed black 2px; */
+  border: dashed black 2px; 
 }
 
+/* Awesome looking button*/
 button{
     height: 40px;
     font-weight: bold;
@@ -29,10 +34,18 @@ button{
 }
 
 
+
+/* clear pad I made to cheat a little */
+
 .pad
 {
     color: transparent;
 }
+
+
+
+/* Header */
+
 #headerContent
 {
     display: flex;
@@ -80,7 +93,7 @@ button{
     text-align: center;
 }
 
-
+/* Page content - content blocks  flex wrap*/
 #pageContent
 {
     display: flex;
@@ -110,16 +123,20 @@ button{
 }
 
 
-
+/* set picture size for jquery hover picture */
 #theShining
 {
     width: 500px;
 }
 
+/* messing around a little bit */
 .wraper {
     flex:1;
   }
 
+
+
+/* Footer */
 #footerContent
 {
     display: flex;
@@ -161,6 +178,8 @@ button{
 margin-left: 100px;
 }
 
+
+/* Swapping content blocks when page loads */
 .first-item {
     order: 1;
   }
