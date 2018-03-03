@@ -20,7 +20,7 @@ body{
 }
 /* putting borders on divs for testing purposes */
 div{
-  border: dashed black 2px; 
+  /*border: dashed black 2px; */
 }
 
 /* Awesome looking button*/
@@ -31,6 +31,10 @@ button{
     background-color: silver;
     width: 75px;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+ul{
+    list-style: none;
 }
 
 
@@ -168,6 +172,18 @@ button{
 {
     width: 50px;
 }
+
+/*Animate Icons*/
+.footerIcon:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+}
+
+
+
+
+
 #footerLeft
 {
 

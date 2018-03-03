@@ -28,6 +28,14 @@ var getJSON=document.getElementById
 
 */
 
+/*
+$(".footerIcon") .mouseover(function () {
+    this.css("width", "60px");
+ }).mouseout(function () {
+     this.css("width", "50px");
+ });
+*/
+
 
 // getJSON github
 $("button").click(function()  {
@@ -39,19 +47,17 @@ $.getJSON( "https://api.github.com/users/Capn-America/repos", function(obj) {
          // $("ul").append("<li>"+value.name+value.html_url+"</li>");
          
          
-         $("ul").append("<li> <a href="+value.html_url+">"+value.name+"</a> </li>");
+         $("ul").append("<li> <a href="+value.html_url+">"+value.name+"</a> </li><li>- - - -</li>");
+         
     });
  //   document.getElementById("eraseLabel").innerHTML="";
     
 });
-
-
-
 });
 
 
 
-
+//Mouseover changes image using jquery
     $("#theShining") .mouseover(function () {
         this.src= "file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/shining2.png";
      }).mouseout(function () {
@@ -60,11 +66,26 @@ $.getJSON( "https://api.github.com/users/Capn-America/repos", function(obj) {
 
 
 
+    
+     $("#myCheck").toggle(
+         function(){
+        $("#original").attr(href,style2.css);
+     },
+        function(){
+            $("#original").attr(href,style.css);
+        }
+    );
+
+
+    
+
+
+
 
 
 
 //Change color scheme of page.
-  function turnGrey()
+ /* function turnGrey()
     {
         var checkBox = document.getElementById("myCheck");
      if (checkBox.checked == true){
@@ -74,7 +95,7 @@ $.getJSON( "https://api.github.com/users/Capn-America/repos", function(obj) {
         document.getElementById("original").href="style.css";
     }
     }
-
+*/
 
 
 //hover over element- Image-Shining DOC

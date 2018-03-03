@@ -14,7 +14,7 @@
  <!-- Header: background image -->
             <div id="header">
                 <div id="name">
-<!--font change for Name-->
+<!--font change for Name in CSS-->
                     <div id="bigName">Stephen Rogers</div>
                     <div id="jobTitle">.NET Developer Student</div>
                 </div>
@@ -38,18 +38,23 @@
            
             
             </div></div>
+<!-- 2nd page block:
+    Links to websites
+    Gitbub repositories using AJAX
+    Tech skills
+-->
                     <div class="pageblock">
                             
                             
                         <h1>Links to My Websites:</h1>
                         <div class="pad">Pad</div>
-                        
+<!--Icons animated with css -->                       
                             <a href="https://www.linkedin.com/in/stephenrogers74"> 
                                 <img class="footerIcon" src="file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/LinkedIn.png"> 
                                 </a>
                             
                             
-                                <a href="https://www.facebook.com/stephen.rogers.315"> 
+                                <a  href="https://www.facebook.com/stephen.rogers.315"> 
                                 <img class="footerIcon"  src="file:///Users/stephenrogers/Desktop/Woz%20U/Front%20End%20Foundations/FrontEndFinal/FrontEndFinalProject/pictures/facebook.png">
                                 </a>
                             
@@ -60,32 +65,19 @@
                                 <div class="pad">Pad</div>
                                 <div class="pad">Pad</div>
                                 <h1>Github Repositories</h1>
+ <!-- Pess button below disappears when button is pushed -->                               
                                 <div id="gitHubReps">
-                                    <h3 id="eraseLabel">Press button below to load Github Repositories</h3>
+                                    <h4 id="eraseLabel">Press button below for Github Repositories</h4>
                                 
-                                <ul></ul>
+ <!--github repositories inserted in unordered list with no bullets - css-->
+                                   <ul></ul>
                                 <div class="pad">Pad</div>
                                 <button id="buttonJSON" >Github Repositories</button>
 
                                 <div class="pad">Pad</div>
-                                
-                          
-                                      
-                                
-
-
-
-
-
-
-
-
-                            
-                            
+                                <div class="pad"></div>
                         
-                        <div class="pad"></div>
-                        
-                        <div class="pad">Pad</div>
+                                <div class="pad">Pad</div>
                         <h1>Tech Skills:</h1>
                         <div class="pad">Pad</div>
                         <p></p>
@@ -94,13 +86,17 @@
                         <p>Get back to me in 6 months.</p>
                     </div>
                     </div>
+<!--3rd page block - appears first on page- switches places with "first-item" 
+Toggle switch uses Jquery to switch CSS "stylesheet"
+Then there's just a picture of me.  Handsome, eh?-->
+
                     <div class="pageblock last-item">
                            
                             Use toggle switch below to change site color scheme: <br>
                                 
 
                             <label class="switch">
-                             <input type="checkbox" id="myCheck" onclick="turnGrey()">
+                             <input type="checkbox" id="myCheck"> <!-- onclick="turnGrey()"-->
                              <span class="slider round"></span>
                              </label>   
 
@@ -110,6 +106,7 @@
                     </div>
             </div>
         <div id="wraper"></div>
+<!--static footer with change of font- CSS -->
         <div id="footerContent">
             <div id="footer">
                 <div id="footerLeft">
